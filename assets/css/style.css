@@ -391,7 +391,6 @@ combined-image__hero {
 }
 @media (min-width: 1340px) {
   .logo__image-page {
-    width: 11.8rem;
     margin: 8rem auto 0 auto;
   }
   .content__combined-image {
@@ -411,7 +410,8 @@ combined-image__hero {
     height: 31.4rem;
     gap: 3.2rem;
     justify-content: center;
-    place-self: center;
+    /* place-self: center; */
+    place-self: end;
   }
   .header__title {
     font-size: 6.4rem;
