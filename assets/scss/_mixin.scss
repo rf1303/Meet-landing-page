@@ -1,0 +1,16 @@
+@mixin flexBox( $direction : row , $jc : start, $ai : start) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jc;
+  align-items: $ai;
+}  
+
+@mixin typography($size : 1.6rem, $weight : 500, $lineHeight : 1.1 ) {
+  font-family: redHatDisplay;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+  text-align: center;
+}
+
+
