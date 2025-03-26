@@ -240,7 +240,7 @@ combined-image__hero {
 .text__lead {
   font-family: redHatDisplay;
   font-size: 1.6rem;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 1.5;
   text-align: center;
   color: hsl(240, 10%, 57%);
@@ -390,6 +390,10 @@ combined-image__hero {
   }
 }
 @media (min-width: 1340px) {
+  .logo__image-page {
+    width: 11.8rem;
+    margin: 8rem auto 0 auto;
+  }
   .content__combined-image {
     display: none;
   }
@@ -400,7 +404,7 @@ combined-image__hero {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 36rem;
-    gap: 12.9rem;
+    gap: 12.8rem;
   }
   .content__header {
     width: 44.83rem;
@@ -443,6 +447,7 @@ combined-image__hero {
   .text__lead {
     max-width: 52.4rem;
     font-size: 1.8rem;
+    font-weight: 500;
   }
   .layout__footer {
     margin-inline: auto;
