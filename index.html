@@ -9,44 +9,45 @@
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-<section class="layout"> 
-        <img class="logo__image-page" src="./assets/images/logo.svg" alt="Meet makes it easy"> 
-    <div class="content__combined-image"> 
-        <picture class="content__combined-picture"> 
-            <source srcset="./assets/images/tablet/image-hero.avif" type="image/avif" media="(max-width: 47.99em)">
-            <source srcset="./assets/images/tablet/image-hero.webp" type="image/webp" media="(max-width: 47.99em)">
-            <img class="combined-image__hero" src="./assets/images/tablet/image-hero.png" alt="Hero group chat for everyone"> 
-        </picture>
-    </div>
-
-    <section class="layout__content"> 
-        
-        <section class="content__combined"> 
-            <picture class="content__combined-image-left"> 
-                <source srcset="./assets/images/desktop/image-hero-left.avif" type="image/avif">
-                <source srcset="./assets/images/desktop/image-hero-left.webp" type="image/webp">
-                <img class="combined-image__hero-left" src="./assets/images/desktop/image-hero-left.png" alt="Hero group chat for everyone"> 
+    <header class="layout"> 
+        <img class="logo__image-page" src="./assets/images/logo.svg" alt="" aria-hidden="true"> 
+        <div class="content__combined-image"> 
+            <picture class="content__combined-picture"> 
+                <source srcset="./assets/images/tablet/image-hero.avif" type="image/avif" media="(max-width: 47.99em)">
+                <source srcset="./assets/images/tablet/image-hero.webp" type="image/webp" media="(max-width: 47.99em)">
+                <img class="combined-image__hero" src="./assets/images/tablet/image-hero.png" alt="Hero group chat for everyone"> 
             </picture>
-                
-             <header class="content__header"> 
-                <h1 class="header__title">Group Chat <br>  for Everyone</h1> 
-                <p class="header__subtitle"> 
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-                </p>
+        </div>
 
-                <div class="header__buttons"> 
-                   <button type="button" class="buttons__download buttons__page--cyan">Download <span class="buttons__down--cyan">v1.3</span></button> 
-                   <button type="button" class="buttons__what buttons__page--purple">What is it?</button> 
-                </div>
-             </header>
-            <picture class="content__combined-image-right"> 
-                <source srcset="./assets/images/desktop/image-hero-right.avif" type="image/avif">
-                <source srcset="./assets/images/desktop/image-hero-right.webp" type="image/webp">
-                <img class="combined-image__hero-left" src="./assets/images/desktop/image-hero-right.png" type="image/webp"> 
-            </picture>
-                
+        <section class="layout__content"> 
+            
+            <section class="content__combined"> 
+                <picture class="content__combined-image-left"> 
+                    <source srcset="./assets/images/desktop/image-hero-left.avif" type="image/avif">
+                    <source srcset="./assets/images/desktop/image-hero-left.webp" type="image/webp">
+                    <img class="combined-image__hero-left" src="./assets/images/desktop/image-hero-left.png" alt="Hero group chat for everyone left"> 
+                </picture>
+                    
+                <section class="content__header"> 
+                    <h1 class="header__title">Group Chat <br>  for Everyone</h1> 
+                    <p class="header__subtitle"> 
+      Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+                    </p>
+
+                    <div class="header__buttons"> 
+                       <button type="button" class="buttons__download buttons__page--cyan">Download <span class="buttons__down--cyan">v1.3</span></button> 
+                       <button type="button" class="buttons__what buttons__page--purple">What is it?</button> 
+                    </div>
+                 </section>
+                <picture class="content__combined-image-right"> 
+                    <source srcset="./assets/images/desktop/image-hero-right.avif" type="image/avif">
+                    <source srcset="./assets/images/desktop/image-hero-right.webp" type="image/webp">
+                    <img class="combined-image__hero-left" src="./assets/images/desktop/image-hero-right.png" alt="Hero group chat for everyone right"> 
+                </picture>
+                    
+            </section>
         </section>
-    </section>
+    </header>
 
     <main class="layout__main"> 
         <div class="main__number"> 
@@ -103,6 +104,5 @@ workspace. Control who can join with invite-only team access, data encryption, a
         </section> 
         
     </footer>
-</section>
 </body>
 </html>

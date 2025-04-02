@@ -7,9 +7,7 @@
 
 body {
   font-family: redHatDisplay;
-}
-.layout {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .logo__image-page {
@@ -31,7 +29,7 @@ body {
   transform: translateX(-7.735%);
 }
 
-combined-image__hero {
+.combined-image__hero {
   width: 100%;
 }
 
@@ -266,7 +264,7 @@ combined-image__hero {
 
   .layout__content {
     padding-top: 6.4rem; 
-    padding-bottom: 6.4rem;
+    padding-bottom: 5.6rem;
   }
 
   .layout__main {
@@ -418,3 +416,164 @@ combined-image__hero {
 }
 
 
+
+
+
+
+
+
+
+
+// @use './reset';
+// @use './variables' as *;
+// @use './mixin' as *;
+// @use './font-face' as *;
+//
+// @include fontFace("redHatDisplay", "../fonts/Red_Hat_Display/RedHatDisplay-Italic-VariableFont_wght.ttf", 400 900);
+//
+// body {
+//   font-family: redHatDisplay;
+// }
+//
+// // General Layout
+// .layout {
+//   overflow: hidden;
+// }
+//
+// .logo__image-page {
+//   width: 11.8rem;
+//   margin: 4.8rem auto 0;
+// }
+//
+// // Imagen combinada
+// .content__combined-image {
+//   min-width: 115.47%;
+//   padding-top: 6.4rem;
+//   display: flex;
+//   justify-content: center;
+//   overflow: hidden;
+//   transform: translateX(-7.735%);
+// }
+//
+// .combined-image__hero {
+//   width: 100%;
+// }
+//
+// // Layout con Grid
+// .layout__content {
+//   display: grid;
+//   place-content: center;
+//   padding: 4.8rem 3.2rem;
+// }
+//
+// // Header
+// .header__title {
+//   @include typography(4rem, 900);
+//   color: $slate-900-color;
+// }
+//
+// .header__subtitle {
+//   max-width: 30.5rem;
+//   @include typography(1.6rem, 500, 1.5);
+//   color: $slate-600-color; 
+// }
+//
+// // Botones con Mixin
+// .buttons__download, 
+// .buttons__what {
+//   @include button-style(1.6rem, 900);
+//   height: 5.6rem;
+//   padding: 1.6rem 4rem;
+//   border-radius: 3.9rem;
+// }
+//
+// .buttons__page--cyan {
+//   background-color: $cyan-600-color;
+//
+//   &:hover, &:focus {
+//     background-color: $cyan-hover-color;
+//     border: 1px solid $cyan-600-color;
+//   }
+// }
+//
+// .buttons__page--purple {
+//   background-color: $purple-600-color;
+//
+//   &:hover, &:focus {
+//     background-color: $purple-hover-color;
+//     border: 1px solid $purple-600-color;
+//   }
+// }
+//
+// // Sección principal
+// .layout__main {
+//   @include flex(column, center, center);
+//   gap: 6.4rem;
+//   padding: 3.2rem;
+// }
+//
+// // Collage
+// .main__collage {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   gap: 1.6rem;
+// }
+//
+// .collage__image {
+//   border-radius: .8rem;
+//   width: clamp(14.75rem, 11.395rem + 14.316vw, 13.9rem);
+//   height: clamp(14.4rem, 12.426rem + 8.421vw, 13.9rem);
+// }
+//
+// // Footer
+// .footer__hero {
+//   @include flex(column, center, center);
+//   gap: 2.4rem;
+//   padding: 6.4rem 3.2rem;
+//   background: linear-gradient(rgba(77, 150, 178, 0.85), rgba(77, 150, 178, 0.85)), 
+//               url('../images/mobile/image-footer.jpg');
+//   background-size: cover;
+// }
+//
+// // Media Queries
+// @media (max-width: 320px) {
+//   .layout__main {
+//     gap: 4.8rem; 
+//     padding: 1.2rem 2.2rem;
+//   }
+//
+//   .header__title {
+//     font-size: clamp(2.5rem, -3.1rem + 32vw, 3.3rem);
+//   }
+// }
+//
+// @media (min-width: 653px) {
+//   .header__title {
+//     font-size: 4.8rem;
+//   }
+//
+//   .main__collage {
+//     grid-template-columns: repeat(4, 1fr);
+//   }
+//
+//   .footer__hero {
+//     background: linear-gradient(rgba(77, 150, 178, 0.85), rgba(77, 150, 178, 0.85)), 
+//                 url('../images/tablet/image-footer.jpg');
+//     background-size: cover;
+//   }
+// }
+//
+// @media (min-width: 1340px) {
+//   .content__combined {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     height: 36rem;
+//     gap: 12.8rem;
+//   }
+//
+//   .footer__hero {
+//     background: linear-gradient(rgba(77, 150, 178, 0.85), rgba(77, 150, 178, 0.85)), 
+//                 url('../images/desktop/image-footer.jpg');
+//   }
+// }
+//
